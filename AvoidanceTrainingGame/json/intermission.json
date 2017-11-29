@@ -1,0 +1,125 @@
+[
+	{
+		"entity": "TextEntity",
+		"id": "title_text",
+		"text": "Select Enemy Upgrade:",
+		"x": 200,
+		"y": 20,
+		"font": "title",
+		"color": "white",
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "press_hint_text",
+		"text": "Press Enter to Next Level",
+		"x": 200,
+		"y": 380,
+		"font": "heading",
+		"color": "red",
+	},
+
+	{
+		"entity": "BoxEntity",
+		"id": "option_1_box",
+		"x": -200,
+		"y": 120,
+		"width": 320,
+		"height": 140,
+		"thickness": 5,
+		"color": "Gray",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 120 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}
+			}
+	},
+
+	{
+		"entity": "BoxEntity",
+		"id": "option_2_box",
+		"x": 600,
+		"y": 280,
+		"width": 320,
+		"height": 140,
+		"thickness": 5,
+		"color": "Gray",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 280 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}
+			}
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "option_1_text",
+		"text": "Increase Bullet Speed by 10%",
+		"x": -200,
+		"y": 120,
+		"font": "title",
+		"color": "white",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 120 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}
+			},
+		"layout":
+		{
+			"width": 320, "height": 140
+		}
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "option_2_text",
+		"text": "Increase Shooting Rate by 10%",
+		"x": 600,
+		"y": 280,
+		"font": "title",
+		"color": "white",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 280 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}
+			},
+		"layout":
+		{
+			"width": 320, "height": 140
+		}
+	},
+
+	{
+		"entity": "SpriteEntity",
+		"id": "triangle_up",
+		"x": 20,
+		"y": 120,
+		"bmp": "triangle_up",
+		"visible": "false",
+	},
+
+	{
+		"entity": "SpriteEntity",
+		"id": "triangle_down",
+		"x": 20,
+		"y": 280,
+		"bmp": "triangle_down",
+		"visible": "false",
+	},
+]

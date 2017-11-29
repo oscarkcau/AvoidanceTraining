@@ -1,0 +1,39 @@
+[
+	{
+		"entity": "TextEntity",
+		"id": "title_text",
+		"text": "Avoidance Training",
+		"x": 200,
+		"y": -20,
+		"font": "title",
+		"color": "white",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 180 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}		
+			}
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "press_hint_text",
+		"text": "Press Enter to Start",
+		"x": 200,
+		"y": 420,
+		"font": "heading",
+		"color": "red",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 210 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}	
+			}
+	}
+]

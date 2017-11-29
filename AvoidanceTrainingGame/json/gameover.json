@@ -1,0 +1,38 @@
+[
+	{
+		"entity": "TextEntity",
+		"id": "title_text",
+		"text": "Game Over",
+		"x": 200,
+		"y": -20,
+		"font": "title",
+		"color": "white",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 200 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}
+			}
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "press_hint_text",
+		"text": "Press Enter to Start",
+		"x": 200,
+		"y": 420,
+		"font": "heading",
+		"color": "red",
+		"motion": 
+			{
+				"easing": 
+				{ 
+					"target": { "x": 200, "y": 230 },
+					"frames": 50,
+					"type": "EaseOutElastic"
+				}			}
+	}
+]

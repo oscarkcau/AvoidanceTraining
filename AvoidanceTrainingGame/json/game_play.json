@@ -1,0 +1,57 @@
+[
+	{
+		"entity": "TextEntity",
+		"id": "title_text",
+		"text": "Gameplay Screen",
+		"x": 200,
+		"y": 360,
+		"font": "heading",
+		"color": "white"
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "ready_countdown_text",
+		"text": "5",
+		"x": 200,
+		"y": 200,
+		"font": "huge",
+		"color": "white"
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "countdown_text",
+		"text": "30",
+		"x": 200,
+		"y": 0,
+		"font": "title",
+		"color": "white",
+		"line_alignment": "Near"
+	},
+
+	{
+		"entity": "TextEntity",
+		"id": "score_text",
+		"text": "0000",
+		"x": 0,
+		"y": 0,
+		"font": "title",
+		"color": "Gray",
+		"alignment": "Near",
+		"line_alignment": "Near"
+	},
+
+	{
+		"entity": "SpriteEntity",
+		"id": "alien",
+		"x": 200,
+		"y": 300,
+		"bmp": "alien",
+		"type": "Alien",
+		"motion":
+		{
+		
+		}
+	}
+]
