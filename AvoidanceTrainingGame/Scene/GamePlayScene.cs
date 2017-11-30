@@ -28,9 +28,9 @@ namespace AvoidanceTrainingGame
 		float attractorFactor = 0.2f;
 		State state = State.Ready;
 		EntityAnimator animator = null;
-
-		// public properties;
-		public float Width { get; private set; }
+ 
+        // public properties;
+        public float Width { get; private set; }
 		public float Height { get; private set; }
 		public SpriteEntity Alien { get; private set; }
 		public NormalBulletGenerator NormalBulletGenerator { get; private set; }
@@ -50,7 +50,7 @@ namespace AvoidanceTrainingGame
 			this.LaserGenerator = new LaserGenerator(this);
 			this.BombGenerator = new BombGenerator(this);
 
-			if (data != null)
+            if (data != null)
 			{
 				dynamic settings = data;
 				NormalBulletGenerator.BulletSpeed = settings.Speed;
@@ -191,14 +191,13 @@ namespace AvoidanceTrainingGame
 						// increase score if bullet is close enough
 						score++;
 						se.State = (int)Program.BulletState.Approached;
-
-						/*
+                        /*
 						if (e.ObjectType == Program.GameObjectType.Bullet)
 							se.Bitmaps = this.NormalBulletGenerator.ApproachedSprites;
 						if (e.ObjectType == Program.GameObjectType.HomingBullet)
 							se.Bitmaps = this.HomingBulletGenerator.ApproachedSprites;
 						*/
-					}
+                    }
 				}
 
 				if (e.ObjectType == Program.GameObjectType.Laser)
@@ -215,7 +214,10 @@ namespace AvoidanceTrainingGame
 					{
 						// increase score if bullet is close enough
 						score++;
-					}
+                        var p1 = new System.Windows.Media.MediaPlayer();
+                        p1.Open(new System.Uri(AppDomain.CurrentDomain.BaseDirectory + "wav/click.wav"));
+                        p1.Play();
+                    }
 				}
 
 				if (e.ObjectType == Program.GameObjectType.Bomb)

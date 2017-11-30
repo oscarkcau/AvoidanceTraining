@@ -24,17 +24,15 @@ namespace AvoidanceTrainingGame
 		public static Random Rand { get { return rand; } }
 		public static long CurrentTime { get { return stopWatch.ElapsedMilliseconds; } }
 		public static Dictionary<string, Font> Fonts { get; private set; }
-		public static Dictionary<string, Bitmap> Sprites { get; private set; } 
+		public static Dictionary<string, Bitmap> Sprites { get; private set; }
 
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
-		[STAThread]
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
 		static void Main()
 		{
 			Program.stopWatch.Start();
-			Program.Fonts = new Dictionary<string, Font>();
-			Program.Sprites = new Dictionary<string, Bitmap>();
 
 			InitFonts();
 			LoadSprites();
@@ -61,14 +59,18 @@ namespace AvoidanceTrainingGame
 		// private static methods
 		private static void InitFonts()
 		{
-			Fonts["title"] = new Font("Munro", 24, FontStyle.Bold); ;
+            Program.Fonts = new Dictionary<string, Font>();
+
+            Fonts["title"] = new Font("Munro", 24, FontStyle.Bold); ;
 			Fonts["heading"] = new Font("Munro Small", 12, FontStyle.Bold); ;
 			Fonts["default"] = new Font("Munro Small", 12, FontStyle.Regular);
 			Fonts["huge"] = new Font("Munro", 128, FontStyle.Regular);
 		}
 		private static void LoadSprites()
 		{
-			string sprites_folder = AppDomain.CurrentDomain.BaseDirectory + "sprites";
+            Program.Sprites = new Dictionary<string, Bitmap>();
+
+            string sprites_folder = AppDomain.CurrentDomain.BaseDirectory + "sprites";
 			DirectoryInfo d = new DirectoryInfo(sprites_folder);
 
 			foreach (var file in d.GetFiles("*.png"))
